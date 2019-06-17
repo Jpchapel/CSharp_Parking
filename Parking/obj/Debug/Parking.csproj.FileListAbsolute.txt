@@ -1,0 +1,45 @@
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\bin\Debug\Parking.exe.config
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\bin\Debug\Parking.exe
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\bin\Debug\Parking.pdb
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.fParking.resources
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.Properties.Resources.resources
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.exe
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking\Parking\obj\Debug\Parking.pdb
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\bin\Debug\Parking.exe.config
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.exe
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.pdb
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\bin\Debug\Parking.exe
+F:\Curso2018_19\_Examenes\av3_2019_06_13\Parking_Ex\Parking\bin\Debug\Parking.pdb
+D:\perchajoa\Parking_Ex\Parking\bin\Debug\Parking.exe.config
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.exe
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.pdb
+D:\perchajoa\Parking_Ex\Parking\bin\Debug\Parking.exe
+D:\perchajoa\Parking_Ex\Parking\bin\Debug\Parking.pdb
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+D:\perchajoa\Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe.config
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.exe
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.pdb
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe
+F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.pdb
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe.config
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.exe
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.pdb
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.pdb
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
