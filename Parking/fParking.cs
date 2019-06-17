@@ -122,11 +122,17 @@ namespace Parking
             estadoBotones("saida");
 
             dsVehiculos = oVehiculo.leerCochesParking(oBaseDatos);
+            dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
             for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
             {
                 cbxVehiculosParking.Items.Add(dsVehiculos.Tables[0].Rows[i][1]);
             }
 
+            cbxMarca.Items.Clear();
+            for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
+            {
+                cbxMarca.Items.Add(Convert.ToString(dsMarcas.Tables[0].Rows[i][1]));
+            }
             
         }
 
@@ -135,19 +141,18 @@ namespace Parking
             oVehiculo.valorarPropiedades(dsVehiculos, cbxVehiculosParking.SelectedIndex);
             txbMatricula.Text = oVehiculo.matricula;
 
-            dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
+            int idMarcaSeleccionada = (int)dsVehiculos.Tables[0].Rows[cbxVehiculosParking.SelectedIndex][2];
             for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
             {
-                cbxMarca.Items.Add(dsMarcas.Tables[0].Rows[i][1]);
+                int idMarca = (int)dsMarcas.Tables[0].Rows[i][0];
+                if(idMarca == idMarcaSeleccionada)
+                {
+                    cbxMarca.SelectedItem = dsMarcas.Tables[0].Rows[i];
+                    cbxMarca.Text = dsMarcas.Tables[0].Rows[i][1].ToString();
+                    break;
+                }
+                
             }
-
-            for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
-            {
-                cbxVehiculosParking.SelectedItem = i;
-                break;
-            }
-            
-
         }
 
         private void btCancelar_Click(object sender, EventArgs e)

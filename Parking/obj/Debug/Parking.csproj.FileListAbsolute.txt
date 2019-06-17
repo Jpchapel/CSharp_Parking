@@ -43,3 +43,12 @@ C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\P
 C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
 C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
 C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.exe.config
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.exe
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.pdb
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.exe
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.pdb
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.fParking.resources
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.Properties.Resources.resources
+C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
