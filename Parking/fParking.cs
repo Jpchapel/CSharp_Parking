@@ -141,14 +141,12 @@ namespace Parking
                 cbxMarca.Items.Add(dsMarcas.Tables[0].Rows[i][1]);
             }
 
-            for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
+            for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
             {
-                if(dsMarcas.Tables[0].Rows[i][0] == dsVehiculos.Tables[0].Rows[i][2])
-                {
-                    cbxMarca.SelectedIndex = i;
-                    break;
-                }
+                cbxVehiculosParking.SelectedItem = i;
+                break;
             }
+            
 
         }
 
