@@ -71,6 +71,7 @@ namespace Parking
         private void fParking_Load(object sender, EventArgs e)
         {
             estadoBotones("inicio");
+
         }
 
         // imprimir ticket
@@ -192,8 +193,7 @@ namespace Parking
                     break;
                 }
             }
-            Console.Write(oVehiculo.idModelo);
-
+            
         }
 
         private void btCancelar_Click(object sender, EventArgs e)
@@ -206,16 +206,6 @@ namespace Parking
         {
             if (aparcado)
             {
-                dsVehiculos = oVehiculo.leerCochesParking(oBaseDatos);
-
-                for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
-                {
-                    if (cbxVehiculosParking.SelectedItem == dsVehiculos.Tables[0].Rows[i][1])
-                    {
-                        oVehiculo.id = Convert.ToInt32(dsVehiculos.Tables[0].Rows[i][0]);
-                    }
-                }
-                
                 oVehiculo.eliminarVehiculoParking(oBaseDatos);
             }
             else
@@ -278,15 +268,20 @@ namespace Parking
                 }
             }
 
+
+
             dsModelos = oVehiculo.leerModelos(oBaseDatos);
 
             cbxModelo.Items.Clear();
 
             for (int i = 0; i < dsModelos.Tables[0].Rows.Count; i++)
             {
-                if (oVehiculo.idMarca == Convert.ToInt32(dsModelos.Tables[0].Rows[i][2]))
+                cbxModelo.Items.Add(Convert.ToString(dsModelos.Tables[0].Rows[i][1]));
+
+                if (Convert.ToInt32(dsModelos.Tables[0].Rows[i][0]) == oVehiculo.idModelo)
                 {
-                    cbxModelo.Items.Add(dsModelos.Tables[0].Rows[i][1]);
+                    cbxModelo.SelectedItem = dsModelos.Tables[0].Rows[i][1];
+                    break;
                 }
             }
         }
