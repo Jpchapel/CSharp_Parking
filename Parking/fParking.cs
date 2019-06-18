@@ -103,21 +103,11 @@ namespace Parking
 
 
             // detalle
-            dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
 
-            //for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
-            //{
-            //    if(cbxMarca.SelectedItem == dsMarcas.Tables[0].Rows[i][1])
-            //    {
-
-            //    }
-            //}
-
-            oVehiculo.marca = Convert.ToString(cbxMarca.SelectedItem);
 
             e.Graphics.DrawString(oVehiculo.matricula, fuenteN, Brushes.Black, 20, posicionVertical, new StringFormat());
-            e.Graphics.DrawString(oVehiculo.marca, fuenteN, Brushes.Black, 20, posicionVertical +20, new StringFormat());
-            e.Graphics.DrawString(oVehiculo.modelo, fuenteN, Brushes.Black, 20, posicionVertical +40, new StringFormat());
+            e.Graphics.DrawString(oVehiculo.marca, fuenteN, Brushes.Black, 20, posicionVertical + 20, new StringFormat());
+            e.Graphics.DrawString(oVehiculo.modelo, fuenteN, Brushes.Black, 20, posicionVertical + 40, new StringFormat());
 
             // pe de ticket
 
@@ -184,6 +174,8 @@ namespace Parking
                     break;
                 }
             }
+
+
         }
 
         private void btCancelar_Click(object sender, EventArgs e)
@@ -224,13 +216,10 @@ namespace Parking
                 dsModelos = oVehiculo.leerModelos(oBaseDatos);
                 for (int i = 0; i < dsModelos.Tables[0].Rows.Count; i++)
                 {
-                    if (oVehiculo.idMarca == Convert.ToInt32(dsModelos.Tables[0].Rows[i][2]))
+                    if (cbxModelo.SelectedItem.Equals(dsModelos.Tables[0].Rows[i][1]))
                     {
-                        if (cbxModelo.SelectedItem.Equals(dsModelos.Tables[0].Rows[i][1]))
-                        {
-                            oVehiculo.idModelo = Convert.ToInt32(dsModelos.Tables[0].Rows[i][0]);
-                            break;
-                        }
+                        oVehiculo.idModelo = Convert.ToInt32(dsModelos.Tables[0].Rows[i][0]);
+                        break;
                     }
                 }
 
