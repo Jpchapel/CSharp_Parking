@@ -19,6 +19,7 @@ namespace Parking
         DataSet dsModelos;
         DataSet dsVehiculos;
 
+        bool aparcado;
 
         // -------- para estado botones---------------
         string[] estados = new string[] { "inicio", "entrada", "saida" };
@@ -120,15 +121,20 @@ namespace Parking
         private void btSaida_Click(object sender, EventArgs e)
         {
             estadoBotones("saida");
+            aparcado = true;
 
             dsVehiculos = oVehiculo.leerCochesParking(oBaseDatos);
             dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
+
+            cbxVehiculosParking.Items.Clear();
+
             for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
             {
                 cbxVehiculosParking.Items.Add(dsVehiculos.Tables[0].Rows[i][1]);
             }
-
+            
             cbxMarca.Items.Clear();
+
             for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
             {
                 cbxMarca.Items.Add(Convert.ToString(dsMarcas.Tables[0].Rows[i][1]));
@@ -142,16 +148,28 @@ namespace Parking
             txbMatricula.Text = oVehiculo.matricula;
 
             int idMarcaSeleccionada = (int)dsVehiculos.Tables[0].Rows[cbxVehiculosParking.SelectedIndex][2];
+
             for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
             {
                 int idMarca = (int)dsMarcas.Tables[0].Rows[i][0];
+
                 if(idMarca == idMarcaSeleccionada)
                 {
-                    cbxMarca.SelectedItem = dsMarcas.Tables[0].Rows[i];
-                    cbxMarca.Text = dsMarcas.Tables[0].Rows[i][1].ToString();
+                    cbxMarca.SelectedItem = dsMarcas.Tables[0].Rows[i][1];
+                    //cbxMarca.Text = dsMarcas.Tables[0].Rows[i][1].ToString();
                     break;
                 }
                 
+            }
+
+            for (int i = 0; i < dsModelos.Tables[0].Rows.Count; i++)
+            {
+                if(Convert.ToInt32(dsModelos.Tables[0].Rows[i][0]) == oVehiculo.idModelo)
+                {
+                    cbxModelo.SelectedItem = dsModelos.Tables[0].Rows[i][1];
+                    //cbxModelo.Text = dsModelos.Tables[0].Rows[i][1].ToString();
+                    break;
+                }
             }
         }
 
@@ -163,16 +181,62 @@ namespace Parking
 
         private void btGardar_Click(object sender, EventArgs e)
         {
-           
+            if (aparcado)
+            {
+                dsVehiculos = oVehiculo.leerCochesParking(oBaseDatos);
+
+                for (int i = 0; i < dsVehiculos.Tables[0].Rows.Count; i++)
+                {
+                    if(cbxVehiculosParking.SelectedItem == dsVehiculos.Tables[0].Rows[i][1])
+                    {
+                        oVehiculo.id = Convert.ToInt32(dsVehiculos.Tables[0].Rows[i][0]);
+                    }
+                }
+                
+                oVehiculo.eliminarVehiculoParking(oBaseDatos);
+            }
         }
 
         private void btEntrada_Click(object sender, EventArgs e)
         {
+            estadoBotones("entrada");
+            aparcado = false;
+
+            dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
+
+            cbxMarca.Items.Clear();
+
+            for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
+            {
+                cbxMarca.Items.Add(dsMarcas.Tables[0].Rows[i][1]);
+            }
+
+
         }
 
         private void cbxMarca_SelectedIndexChanged(object sender, EventArgs e)
         {
+            for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
+            {
+                if (cbxMarca.SelectedItem.Equals(dsMarcas.Tables[0].Rows[i][1]))
+                {
+                    oVehiculo.idMarca = Convert.ToInt32(dsMarcas.Tables[0].Rows[i][0]);
+                    cbxModelo.Text = string.Empty;
+                    break;
+                }
+            }
 
+            dsModelos = oVehiculo.leerModelos(oBaseDatos);
+
+            cbxModelo.Items.Clear();
+
+            for (int i = 0; i < dsModelos.Tables[0].Rows.Count; i++)
+            {
+                if(oVehiculo.idMarca == Convert.ToInt32(dsModelos.Tables[0].Rows[i][2]))
+                {
+                    cbxModelo.Items.Add(dsModelos.Tables[0].Rows[i][1]);
+                }
+            }
         }
     }
 }
