@@ -103,6 +103,24 @@ namespace Parking
 
 
             // detalle
+            dsMarcas = oVehiculo.leerMarcas(oBaseDatos);
+            for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
+            {
+                if (oVehiculo.idMarca == Convert.ToInt32(dsMarcas.Tables[0].Rows[i][0]))
+                {
+                    oVehiculo.marca = Convert.ToString(dsMarcas.Tables[0].Rows[i][1]);
+                }
+            }
+
+            dsModelos = oVehiculo.leerModelos(oBaseDatos);
+            for (int i = 0; i < dsModelos.Tables[0].Rows.Count; i++)
+            {
+                if (oVehiculo.idModelo == Convert.ToInt32(dsModelos.Tables[0].Rows[i][0]))
+                {
+                    oVehiculo.modelo = Convert.ToString(dsModelos.Tables[0].Rows[i][1]);
+                    break;
+                }
+            }
 
 
             e.Graphics.DrawString(oVehiculo.matricula, fuenteN, Brushes.Black, 20, posicionVertical, new StringFormat());
@@ -174,7 +192,7 @@ namespace Parking
                     break;
                 }
             }
-
+            Console.Write(oVehiculo.idModelo);
 
         }
 
@@ -197,7 +215,7 @@ namespace Parking
                         oVehiculo.id = Convert.ToInt32(dsVehiculos.Tables[0].Rows[i][0]);
                     }
                 }
-
+                
                 oVehiculo.eliminarVehiculoParking(oBaseDatos);
             }
             else
