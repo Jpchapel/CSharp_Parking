@@ -44,10 +44,8 @@
             this.btSaida = new System.Windows.Forms.Button();
             this.btGardar = new System.Windows.Forms.Button();
             this.btCancelar = new System.Windows.Forms.Button();
-            this.btImprimir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.vistaPrevia = new System.Windows.Forms.PrintPreviewDialog();
-            this.documentoImprimir = new System.Drawing.Printing.PrintDocument();
+            this.btImprimir = new System.Windows.Forms.Button();
             this.gbxMatriculas.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -217,16 +215,6 @@
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
-            // btImprimir
-            // 
-            this.btImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btImprimir.Image")));
-            this.btImprimir.Location = new System.Drawing.Point(468, 165);
-            this.btImprimir.Name = "btImprimir";
-            this.btImprimir.Size = new System.Drawing.Size(47, 40);
-            this.btImprimir.TabIndex = 16;
-            this.btImprimir.UseVisualStyleBackColor = true;
-            this.btImprimir.Click += new System.EventHandler(this.btImprimir_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -237,19 +225,15 @@
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
-            // vistaPrevia
+            // btImprimir
             // 
-            this.vistaPrevia.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.vistaPrevia.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.vistaPrevia.ClientSize = new System.Drawing.Size(400, 300);
-            this.vistaPrevia.Enabled = true;
-            this.vistaPrevia.Icon = ((System.Drawing.Icon)(resources.GetObject("vistaPrevia.Icon")));
-            this.vistaPrevia.Name = "vistaPrevia";
-            this.vistaPrevia.Visible = false;
-            // 
-            // documentoImprimir
-            // 
-            this.documentoImprimir.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.contidoPaxina);
+            this.btImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btImprimir.Image")));
+            this.btImprimir.Location = new System.Drawing.Point(468, 165);
+            this.btImprimir.Name = "btImprimir";
+            this.btImprimir.Size = new System.Drawing.Size(47, 40);
+            this.btImprimir.TabIndex = 16;
+            this.btImprimir.UseVisualStyleBackColor = true;
+            this.btImprimir.Click += new System.EventHandler(this.btImprimir_Click);
             // 
             // fParking
             // 
@@ -294,10 +278,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btEntrada;
         private System.Windows.Forms.Button btSaida;
-        private System.Windows.Forms.Button btImprimir;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PrintPreviewDialog vistaPrevia;
-        private System.Drawing.Printing.PrintDocument documentoImprimir;
+        private System.Windows.Forms.Button btImprimir;
     }
 }
 

@@ -34,21 +34,24 @@ F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Res
 F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
 F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe
 F:\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.pdb
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe.config
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.exe
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.pdb
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.pdb
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
-C:\Users\Stream\Desktop\Clases\Repaso\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.exe.config
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.exe
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.pdb
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.exe
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\bin\Debug\Parking.pdb
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.fParking.resources
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.Properties.Resources.resources
-C:\Users\Stream\Documents\GitHub\DEIN_Parking\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe.config
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.exe
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.pdb
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\bin\Debug\Parking.pdb
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+F:\Segundo\JUNIO SEGUNDO\DEIN\Examen_Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Examen_Parking_Ex\Parking\bin\Debug\Parking.exe.config
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Examen_Parking_Ex\Parking\obj\Debug\Parking.exe
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Examen_Parking_Ex\Parking\obj\Debug\Parking.pdb
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\bin\Debug\Parking.exe.config
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.exe
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.pdb
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\bin\Debug\Parking.exe
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\bin\Debug\Parking.pdb
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.csprojResolveAssemblyReference.cache
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.fParking.resources
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.Properties.Resources.resources
+D:\REPETIR\DEIN\PRUEBAS EXAMEN\Parking_Ex\Parking\obj\Debug\Parking.csproj.GenerateResource.Cache
