@@ -98,6 +98,8 @@ namespace Parking
 
         private void llenarComboMarcas()
         {
+            cbxMarca.Items.Clear();
+
             for (int i = 0; i < dsMarcas.Tables[0].Rows.Count; i++)
             {
                 cbxMarca.Items.Add(Convert.ToString(dsMarcas.Tables[0].Rows[i][1]));
