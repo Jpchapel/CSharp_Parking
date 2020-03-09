@@ -31,6 +31,17 @@ namespace Parking
                 {false,false,true,false,true,true,true}
             };
 
+        // -------- para ticket ----------------------
+        int posicionVertical = 0;
+        double TotalTicket = 1.5;
+
+        Font fuenteG = new Font("Courier New", 12);
+        Font fuenteN = new Font("Courier New", 10);
+        Font fuenteP = new Font("Courier New", 8);
+        Font fuenteMP = new Font("Courier New", 6);
+        Font fuenteMParial = new Font("Arial", 6);
+        // --------------------------------------------
+
         public fParking()
         {
             InitializeComponent();
@@ -230,7 +241,49 @@ namespace Parking
 
         private void btImprimir_Click(object sender, EventArgs e)
         {
-
+            vistaPrevia.Document = documentoImprimir;
+            vistaPrevia.ShowDialog();
         }
+
+        private void contenidoPagina(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            string cadenaGuiones = "_".PadRight(50, '_');
+
+            //cabeceira de ticket
+            e.Graphics.DrawString("         P A R K I N G", fuenteN, Brushes.Black, 10, 10, new StringFormat());
+            e.Graphics.DrawString("          -----------", fuenteN, Brushes.Black, 10, 20, new StringFormat());
+            e.Graphics.DrawString("         piringalla s.l.", fuenteN, Brushes.Black, 10, 45, new StringFormat());
+            e.Graphics.DrawString("         nif A270000000", fuenteN, Brushes.Black, 10, 60, new StringFormat());
+            e.Graphics.DrawString("       Angelo Colocci s/n", fuenteN, Brushes.Black, 10, 75, new StringFormat());
+            e.Graphics.DrawString("           27001 LUGO", fuenteN, Brushes.Black, 10, 90, new StringFormat());
+
+
+            e.Graphics.DrawString(Convert.ToString(DateTime.Now), fuenteP, Brushes.Black, 10, 115, new StringFormat());
+
+            e.Graphics.DrawString(cadenaGuiones, fuenteMP, Brushes.Black, 10, 140, new StringFormat());
+            posicionVertical = 160;
+
+
+            // detalle
+            string lMatricula = Convert.ToString(oVehiculo.matricula);
+            string lMarca = Convert.ToString(oVehiculo.marca);
+            string lModelo = Convert.ToString(oVehiculo.modelo);
+
+            e.Graphics.DrawString(lMatricula, fuenteMP, Brushes.Black, 10, posicionVertical, new StringFormat());
+            e.Graphics.DrawString(lMarca, fuenteMP, Brushes.Black, 10, posicionVertical + 10, new StringFormat());
+            e.Graphics.DrawString(lModelo, fuenteMP, Brushes.Black, 10, posicionVertical + 20, new StringFormat());
+
+            // pe de ticket
+
+            posicionVertical = 220;
+
+            e.Graphics.DrawString(cadenaGuiones, fuenteMP, Brushes.Black, 10, posicionVertical, new StringFormat());
+            posicionVertical += 15;
+            e.Graphics.DrawString("total...", fuenteG, Brushes.Black, 90, posicionVertical, new StringFormat());
+            e.Graphics.DrawString(string.Format("{0:###,##0.00}", TotalTicket), fuenteG, Brushes.Black, 180, posicionVertical, new StringFormat());
+            posicionVertical += 40;
+            e.Graphics.DrawString("   gracias pola súa visita", fuenteN, Brushes.Black, 20, posicionVertical, new StringFormat());
+        }
+
     }
 }
